@@ -6,7 +6,7 @@ function Hero() {
     />
   );
   return (
-    <section className="justify-center items-start md:items-center gap-4 grid md:grid-cols-2 md:grid-rows-1 bg-gray-800 px-4 pt-24 md:pt-32 pb-16 md:pb-0 md:h-screen min-h-96">
+    <section className="justify-center items-start md:items-center gap-2 grid md:grid-cols-2 md:grid-rows-1 bg-gray-800 px-4 pt-24 md:pt-32 pb-16 md:pb-0 md:h-screen min-h-96">
       <div className="md:mb-0 text-container md:text-left text-center mb:4">
         <h1 className="py-2 font-bold text-white text-3xl md:text-5xl">
           Hello, I'm <span className="text-blue-800">Stephen Kalwenzi</span>

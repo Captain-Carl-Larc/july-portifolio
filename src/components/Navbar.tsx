@@ -1,8 +1,8 @@
 function Navbar() {
   return (
-    <nav className="bg-white shadow-md fixed w-full z-10 top-0 left-0 p-4">
+    <nav className="top-0 left-0 z-10 fixed bg-white shadow-md p-4 w-full">
       <div className="logo">
-        <h2 className="text-xl md:text-3xl font-bold text-blue-800">Karl</h2>
+        <h2 className="font-bold text-orange-400 text-xl md:text-3xl">Karl</h2>
       </div>
     </nav>
   );

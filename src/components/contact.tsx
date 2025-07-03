@@ -7,7 +7,7 @@ function Contact() {
         </h2>
         <p className="mb-8 lg:mb-16 font-light text-gray-300 sm:text-xl text-center">
           <span className="font-semibold">
-            Got a question or an exciting idea you'd like to discuss? 
+            Got a question or an exciting idea you'd like to discuss? {" "}
           </span> 
           Drop me a line! I'm always open to new connections and opportunities.
         </p>

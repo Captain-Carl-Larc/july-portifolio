@@ -1,6 +1,6 @@
 function About() {
     return ( 
-        <section className="bg-blue-700">
+        <section id="about" className="bg-blue-700">
             <div className="p-8 text-container text-center">
                 <h1 className="py-2 font-bold text-white text-3xl md:text-5xl">
                     About Me

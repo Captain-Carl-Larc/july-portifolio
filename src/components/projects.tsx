@@ -37,15 +37,17 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section id="projects" className="bg-gray-900 px-4 py-20">
+    <section id="projects" className="bg-white px-4 py-20">
       <div className="mx-auto max-w-7xl container">
-        <h2 className="mb-12 font-bold text-white text-4xl text-center">My Projects</h2>
+        <h2 className="mb-12 font-bold text-gray-900 text-4xl text-center">
+          My Projects
+        </h2>
 
         <div className="gap-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
           {projects.map((project, index) => (
             <div
               key={index}
-              className="bg-gray-800 shadow-xl border border-gray-700 rounded-lg overflow-hidden hover:scale-105 transition duration-300 ease-in-out transform"
+              className="bg-gray-50 shadow-xl border border-gray-900 rounded-lg overflow-hidden hover:scale-105 transition duration-300 ease-in-out transform"
             >
               <img
                 src={project.image}
@@ -53,15 +55,17 @@ const Projects = () => {
                 className="w-full h-56 object-cover"
               />
               <div className="p-6">
-                <h3 className="mb-3 font-semibold text-white text-2xl">{project.title}</h3>
-                <p className="mb-4 text-gray-300 text-base line-clamp-3">
+                <h3 className="mb-3 font-semibold text-gray-800 text-2xl">
+                  {project.title}
+                </h3>
+                <p className="mb-4 text-gray-600 text-base line-clamp-3">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-teal-700 px-3 py-1 rounded-full font-medium text-teal-100 text-xs"
+                      className="bg-gray-950 px-3 py-1 rounded-full font-medium text-white text-xs"
                     >
                       {tech}
                     </span>
@@ -72,7 +76,7 @@ const Projects = () => {
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 bg-teal-500 hover:bg-teal-600 px-5 py-2 rounded-lg font-medium text-white text-lg text-center transition duration-300 ease-in-out"
+                    className="flex-1 bg-orange-500 hover:bg-gray-800 px-4 py-2 border-gray-900 hover:border-gray-800 rounded-lg font-medium text-white hover:text-orange-500 md:text-lg text-center transition duration-300 ease-in-out"
                   >
                     Live Demo
                   </a>
@@ -80,7 +84,7 @@ const Projects = () => {
                     href={project.githubLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex-1 hover:bg-gray-700 px-5 py-2 border border-gray-600 hover:border-gray-500 rounded-lg font-medium text-gray-300 text-lg text-center transition duration-300 ease-in-out"
+                    className="flex-1 hover:bg-orange-500 px-4 py-2 border border-gray-900 hover:border-gray-800 rounded-lg font-medium text-orange-500 hover:text-gray-800 hover:text-white md:text-lg text-center transition duration-300 ease-in-out"
                   >
                     GitHub
                   </a>
